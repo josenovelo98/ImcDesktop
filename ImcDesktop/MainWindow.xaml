@@ -10,9 +10,9 @@
         <Border Margin="8" BorderThickness="1" BorderBrush="Red">
             <StackPanel Margin="8">
                 <Label Content="Peso en KG:"/>
-                <TextBox x:Name="pesoTexbox"/>
+                <TextBox x:Name="pesoTextbox"/>
                 <Label Content="Estatura en Metros"/>
-                <TextBox x:Name="estaturaTexbox" Margin="4"/>
+                <TextBox x:Name="estaturaTextbox" Margin="4"/>
                 <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
                     <Button x:Name="calcularbutton" Content="calcular" Margin="4" MinWidth="80" Click="calcularbutton_Click"/>
                     <Button x:Name="limpiarbutton" Content="limpiar" Margin="4" MinWidth="80" Click="limpiarbutton_Click"/>
@@ -22,11 +22,12 @@
         <GroupBox Header="Resultados" Margin="8" BorderBrush="Aqua" BorderThickness="1">
             <StackPanel Margin="8">
                 <TextBlock Text="El IMC de la persona es de:"/>
-                <TextBlock Text="23.45" Margin="8" FontWeight="Bold" HorizontalAlignment="Center" FontSize="20"/>
-                <TextBlock />
-                <TextBlock/>
+                <TextBlock Text="23.45" x:Name="ImcTextBlock" Margin="8" FontWeight="Bold" HorizontalAlignment="Center" FontSize="20"/>
+                <TextBlock Text="La situacion nutrional de la persona es:"/>
+                <TextBlock Text="Peso normal" x:Name="situacionTextBlock" Margin="8" HorizontalAlignment="Center" FontSize="16"/>
             </StackPanel>
         </GroupBox>
+        <Button Content="salir" x:Name="SalirButton" HorizontalAlignment="Center" Margin="8" MinWidth="100" Click="SalirButton_Click"/>
 
     </StackPanel>
 </Window>
