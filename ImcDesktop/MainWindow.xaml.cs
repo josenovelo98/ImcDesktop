@@ -20,9 +20,20 @@ namespace ImcDesktop
     /// </summary>
     public partial class MainWindow : Window
     {
+     
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void calcularbutton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void limpiarbutton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

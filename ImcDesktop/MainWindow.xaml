@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImcDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Indece de Masa corporal" Height="450" Width="300">
+    <StackPanel>
+        <Border Margin="8" BorderThickness="1" BorderBrush="Red">
+            <StackPanel Margin="8">
+                <Label Content="Peso en KG:"/>
+                <TextBox x:Name="pesoTexbox"/>
+                <Label Content="Estatura en Metros"/>
+                <TextBox x:Name="estaturaTexbox" Margin="4"/>
+                <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
+                    <Button x:Name="calcularbutton" Content="calcular" Margin="4" MinWidth="80" Click="calcularbutton_Click"/>
+                    <Button x:Name="limpiarbutton" Content="limpiar" Margin="4" MinWidth="80" Click="limpiarbutton_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <GroupBox Header="Resultados" Margin="8" BorderBrush="Aqua" BorderThickness="1">
+            <StackPanel Margin="8">
+                <TextBlock Text="El IMC de la persona es de:"/>
+                <TextBlock Text="23.45" Margin="8" FontWeight="Bold" HorizontalAlignment="Center" FontSize="20"/>
+                <TextBlock />
+                <TextBlock/>
+            </StackPanel>
+        </GroupBox>
 
-    </Grid>
+    </StackPanel>
 </Window>
